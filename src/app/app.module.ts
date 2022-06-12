@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { PageHeaderComponent } from './utils/page-header/page-header.component';
+import { ParagraphCapitalPipe } from './pipes/paragraph-capital.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     NavbarComponent,
     SidenavComponent,
     FooterComponent,
-    ContactsComponent
+    ContactsComponent,
+    PageHeaderComponent,
+    ParagraphCapitalPipe
   ],
   imports: [
     BrowserModule,
