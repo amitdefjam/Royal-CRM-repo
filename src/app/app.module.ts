@@ -10,6 +10,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { PageHeaderComponent } from './utils/page-header/page-header.component';
 import { ParagraphCapitalPipe } from './pipes/paragraph-capital.pipe';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CustomersComponent } from './components/customers/customers.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ContactsComponent,
     PageHeaderComponent,
     ParagraphCapitalPipe,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CustomersComponent
   ],
   imports: [
     BrowserModule,
