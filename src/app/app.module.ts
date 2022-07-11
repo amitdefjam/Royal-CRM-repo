@@ -15,6 +15,18 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CustomersComponent } from './components/customers/customers.component';
 import { HttpTutComponent } from './components/tut/http-tut/http-tut.component';
 import { CustomersNewComponent } from './components/customers-new/customers-new.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { FormsTutComponent } from './components/tut/forms-tut/forms-tut.component';
+import { CustomersDetailsComponent } from './components/customers-details/customers-details.component';
+import { CustomerEditComponent } from './components/customer-edit/customer-edit.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SignOutDirective } from './directives/sign-out.directive';
+import { SignWithGoogleDirective } from './directives/sign-with-google.directive';
 
 @NgModule({
   declarations: [
@@ -29,8 +41,23 @@ import { CustomersNewComponent } from './components/customers-new/customers-new.
     CustomersComponent,
     HttpTutComponent,
     CustomersNewComponent,
+    FormsTutComponent,
+    CustomersDetailsComponent,
+    CustomerEditComponent,
+    LoginComponent,
+    DashboardComponent,
+    SignOutDirective,
+    SignWithGoogleDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -23,11 +23,6 @@ export class SidenavComponent implements OnInit {
       icon: 'bi bi-emoji-sunglasses-fill',
       link: 'year-end-sale',
     },
-    {
-      title: 'HTTP Tutorial',
-      icon: 'bi bi-emoji-sunglasses-fill',
-      link: 'tut/http',
-    },
   ];
 
   constructor() {}

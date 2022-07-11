@@ -1,7 +1,7 @@
 <app-page-header
-  title="add customer"
-  description="add a new customer"
-  icon="bi bi-person-plus"
+  title="Edit Customer"
+  description="Edit your customer's details"
+  icon="bi bi-credit-card-2-front-fill"
 ></app-page-header>
 
 <div class="row mt-5">
@@ -167,12 +167,7 @@
       <div class="row justify-content-center">
         <div class="bg-light p-3 text-center">
           <a routerLink=".." class="btn btn-secondary">Cancel</a>
-          <input
-            type="button"
-            (click)="reset(customerForm)"
-            value="Reset"
-            class="btn btn-secondary ms-3"
-          />
+
           <input
             type="submit"
             value="Save"

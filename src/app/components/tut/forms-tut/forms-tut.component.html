@@ -1,0 +1,49 @@
+<h1>Template Driven Forms</h1>
+<p>import module FormsModule from @angular/forms</p>
+
+<form>
+  <input
+    [(ngModel)]="inp"
+    #inpInformation="ngModel"
+    name="inp"
+    type="text"
+    minlength="10"
+    maxlength="20"
+    required
+  />
+</form>
+
+{{ inp }}
+
+<br />
+<button (click)="inp = ''">reset</button>
+
+<br />
+<br />
+
+<h2>Touched when user got in and out of focus</h2>
+<ul>
+  <li>touched: {{ inpInformation.touched }}</li>
+  <li>untouched: {{ inpInformation.untouched }}</li>
+</ul>
+
+<h2>changes to dirty once the content had changed</h2>
+<ul>
+  <li>pristine: {{ inpInformation.pristine }}</li>
+  <li>dirty: {{ inpInformation.dirty }}</li>
+</ul>
+
+<h2>enabled or disabled based on 'disabled' attribute</h2>
+<ul>
+  <li>enabled: {{ inpInformation.enabled }}</li>
+  <li>disabled: {{ inpInformation.disabled }}</li>
+</ul>
+
+<h2>valid is true when all validation passes</h2>
+<ul>
+  <li>valid: {{ inpInformation.valid }}</li>
+  <li>invalid: {{ inpInformation.invalid }}</li>
+  <li>
+    <pre>{{ inpInformation.errors | json }}</pre>
+  </li>
+</ul>
