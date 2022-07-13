@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
+# Instructions to Run the application.
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+--> 1. open the terminal
+--> 2. get into the current directory
+--> 3. run on the terminal `npm install`
+--> 4. run on the terminal `ng s -o` to run the application
+--> 5. Enjoy the code 😊!
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
